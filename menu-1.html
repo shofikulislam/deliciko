@@ -60,7 +60,7 @@
 
 
     <!--Home page style-->
-    <header id="header" class="header-transparent">
+    <header id="header" class="header-transparent navbar-sticky">
         <div class="logo-area">
             <a href="./index.html" class="logo">
                 <img class="img-fluid" src="assets/images/logo/logo.jpg" alt="">
@@ -69,7 +69,7 @@
 
 
         <!-- navbar container start -->
-        <div class="navbar-container navbar-sticky">
+        <div class="navbar-container">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
@@ -91,7 +91,7 @@
                                             <li><a href="index-4.html">Home Four</a></li>
                                         </ul>
                                     </li>
-                                    <li class="dropdown nav-item active">
+                                    <li class="dropdown nav-item  active">
                                         <a href="#" class="" data-toggle="dropdown">Menu <i
                                                 class="fa fa-angle-down"></i></a>
                                         <ul class="dropdown-menu" role="menu">
@@ -101,12 +101,12 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a href="#" class="" data-toggle="dropdown">Reservation
+                                        <a href="reservation.html" class="">Reservation
                                             <!-- <i class="fa fa-angle-down"></i></a> -->
                                             <!-- <ul class="dropdown-menu" role="menu">
-                                                <li><a href="service.html">Service</a></li>
-                                                <li><a href="service-details.html">Service Details</a></li>
-                                            </ul> -->
+                                            <li><a href="service.html">Service</a></li>
+                                            <li><a href="service-details.html">Service Details</a></li>
+                                        </ul> -->
 
                                     </li>
                                     <li class="nav-item dropdown">
@@ -115,9 +115,17 @@
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="about-us.html">About Us</a></li>
                                             <li><a href="team.html">Team</a></li>
-                                            <li><a href="#">FAQ</a></li>
-                                            <li><a href="#">Pricing Table</a></li>
                                             <li><a href="testimonial.html">Testimonial</a></li>
+                                            <li><a href="contact.html">Contact</a></li>
+                                            <li class="dropdown-submenu">
+                                                    <a href="#" tabindex="-1" class="" data-toggle="dropdown">Gallery <i
+                                                            class="fa fa-angle-right"></i></a>
+                                                    <ul class="dropdown-menu" role="menu">
+                                                        <li><a tabindex="-1" href="gallery1.html">Gallery
+                                                                1</a></li>
+                                                        <li><a href="gallery2.html">Gallery 2</a></li>
+                                                    </ul>
+                                                </li>
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">
@@ -138,7 +146,7 @@
                         </nav>
                     </div>
                     <!-- Col end -->
-                    <div class="col-lg-2 pl-0">
+                    <div class="col-lg-2 pl-0 d-none d-lg-block">
                         <div class="top-bar pull-right">
                             <ul class="header-nav-right-info">
                                 <li>
@@ -943,16 +951,18 @@
     </div>
 
 
-
     <!-- Javascripts File
 =============================================================================-->
     <!-- initialize jQuery Library -->
     <script src="assets/js/jquery-3.3.1.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/moment.min.js"></script>
     <script src="assets/js/jquery-mixtub.js"></script>
     <script src="assets/js/jquery.appear.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
 </body>

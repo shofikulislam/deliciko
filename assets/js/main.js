@@ -51,20 +51,20 @@
       /* ----------------------------------------------------------- */
    /*  Site search
    /* ----------------------------------------------------------- */
-        if ($('.xs-modal-popup').length > 0) {
-         $('.xs-modal-popup').magnificPopup({
-             type: 'inline',
-             fixedContentPos: false,
-             fixedBgPos: true,
-             overflowY: 'auto',
-             closeBtnInside: false,
-             callbacks: {
-                 beforeOpen: function beforeOpen() {
-                     this.st.mainClass = "my-mfp-slide-bottom xs-promo-popup";
-                 }
-             }
-         });
-     }
+   //      if ($('.xs-modal-popup').length > 0) {
+   //       $('.xs-modal-popup').magnificPopup({
+   //           type: 'inline',
+   //           fixedContentPos: false,
+   //           fixedBgPos: true,
+   //           overflowY: 'auto',
+   //           closeBtnInside: false,
+   //           callbacks: {
+   //               beforeOpen: function beforeOpen() {
+   //                   this.st.mainClass = "my-mfp-slide-bottom xs-promo-popup";
+   //               }
+   //           }
+   //       });
+   //   }
 
 
 
@@ -140,10 +140,10 @@ $(".features-slider-classic").owlCarousel({
    items: 1,
    loop: true,
    smartSpeed: 2000,
-   dots: true,
-   nav: false,
-   navText: ["<i class='icon icon-arrow-left'></i>", "<i class='icon icon-arrow-right'></i>"],
-   autoplay: true,
+   dots: false,
+   nav: true,
+   navText: ["<i class='icon icon-chevron-left'></i>", "<i class='icon icon-chevron-right'></i>"],
+   autoplay: false,
    mouseDrag: true,
    responsive: {
       0: {
@@ -170,34 +170,34 @@ $(".features-slider-classic").owlCarousel({
      team slider
 ============================================================*/
 
-if ($('#ts-team-slider').length > 0) {
-   $('#ts-team-slider').owlCarousel({
-       nav: false,
-       items: 4,
-       loop: true,
-       reponsiveClass: true,
-       navText: ['<i class="icon icon-arrow-left"></i>', '<i class="icon icon-arrow-right"></i>'],
-       dots: true,
-       responsive: {
-           // breakpoint from 0 up
-           0: {
-               items: 1,
-           },
-           // breakpoint from 480 up
-           480: {
-               items: 2,
-           },
-           // breakpoint from 768 up
-           768: {
-               items: 2,
-           },
-           // breakpoint from 768 up
-           1200: {
-               items: 4,
-           }
-       }
-   });
-}
+// if ($('#ts-team-slider').length > 0) {
+//    $('#ts-team-slider').owlCarousel({
+//        nav: false,
+//        items: 4,
+//        loop: true,
+//        reponsiveClass: true,
+//        navText: ['<i class="icon icon-arrow-left"></i>', '<i class="icon icon-arrow-right"></i>'],
+//        dots: true,
+//        responsive: {
+//            // breakpoint from 0 up
+//            0: {
+//                items: 1,
+//            },
+//            // breakpoint from 480 up
+//            480: {
+//                items: 2,
+//            },
+//            // breakpoint from 768 up
+//            768: {
+//                items: 2,
+//            },
+//            // breakpoint from 768 up
+//            1200: {
+//                items: 4,
+//            }
+//        }
+//    });
+// }
 
 
  /*==========================================================
@@ -253,7 +253,9 @@ if ($('#ts-team-slider').length > 0) {
       $(".owl-carousel").trigger('refresh.owl.carousel');
     });
 
-
+ /*==========================================================
+     testimonial carousel
+   ===========================================================*/
 	  $(".testimonial-carousel").owlCarousel({
 
       loop: true,
@@ -279,7 +281,36 @@ if ($('#ts-team-slider').length > 0) {
       }
 
    });
-   //testimonial slide
+
+	  $(".ts-testimonial-carousel").owlCarousel({
+
+      loop: true,
+      autoplay: false,
+      autoplayHoverPause: true,
+      nav: true,
+      dots: false,
+      mouseDrag: true,
+      touchDrag: true,
+      slideSpeed: 500,
+      navText: ["<i class='icon icon-chevron-left'></i>", "<i class='icon icon-chevron-right'></i>"],
+      items: 1,
+      responsive: {
+         0: {
+            items: 1
+         },
+         600: {
+            items: 1
+         },
+         1000: {
+            items: 1,
+         }
+      }
+
+   });
+
+    /*==========================================================
+     ts chef carousel
+   ===========================================================*/
    
 	  $(".ts-chef-carousel").owlCarousel({
 
@@ -341,24 +372,24 @@ if ($('#ts-team-slider').length > 0) {
 
    });
 
-   $( "#ts-contact-form" ).submit(function( e ) {
+   // $( "#ts-contact-form" ).submit(function( e ) {
      
     
-      e.preventDefault();
+   //    e.preventDefault();
 
-      var post_url = $(this).attr("action"); //get form action url
+   //    var post_url = $(this).attr("action"); //get form action url
       
-	   var request_method = $(this).attr("method"); //get form GET/POST method
-	   var form_data = $(this).serialize(); //Encode form elements for submission
+	//    var request_method = $(this).attr("method"); //get form GET/POST method
+	//    var form_data = $(this).serialize(); //Encode form elements for submission
 	  
-      $.ajax({
-         url : post_url,
-         type: request_method,
-         data : form_data
-      }).done(function(response){ //
-         $("#server-results").html(response);
-      });
-     }); 
+   //    $.ajax({
+   //       url : post_url,
+   //       type: request_method,
+   //       data : form_data
+   //    }).done(function(response){ //
+   //       $("#server-results").html(response);
+   //    });
+   //   }); 
 
 /*==========================================================
      funfact 
@@ -516,8 +547,6 @@ if ($('#ts-team-slider').length > 0) {
 })
 
 (jQuery);
-
-
 
 
 

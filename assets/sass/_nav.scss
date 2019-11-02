@@ -6,6 +6,8 @@
 
 .logo-area{
    position: absolute;
+   top: 0;
+   left: 0;
 }
 
 @media(max-width:1400px){
@@ -174,6 +176,28 @@ ul.navbar-nav {
 .dropdown-menu.show{
    display: none;
 }
+.dropdown-submenu {
+   position: relative;
+ }
+ .dropdown-submenu {
+   > .dropdown-menu {
+      top: 0;
+      left: 100%;
+      opacity: 0;
+    }
+    &:hover .dropdown-menu {
+      opacity: 1;
+   }
+   a {
+      i {
+         position: absolute;
+         right: 0;
+         top: 50%;
+         transform: translateY(-5px);
+     }
+   }
+ }
+
 
 .navbar-brand {
 	padding: 0;
@@ -548,49 +572,49 @@ ul.navbar-nav {
 /*   Nav standard
 =================================*/
 
-.nav-standard{
-   &:after{
-      position: absolute;
-   content: "";
-   width: 100%;
-   height: 90px;
-   top: 0;
-   left: 0;
-   background-color: rgba(36,33,24,0.3);
-   z-index: -1;
-   }
-   .navbar{
-      background-color: #fff;
-      .navbar-nav{
-         .dropdown{
-            a{
-               color: #000;
-            }
-         }
-      }
-   }
-   .nav-search{
-      background: #ffff;
-      span{
-         i{
-            &.icon{
-               color: #000;
-            }
-         }
-      }
-   }
-   .search-block{
-      right: 150px;
-      bottom: -55px;
-      .search-close{
-         color: #000;
-         position: absolute;
-         top: -50px;
-         right: 15px;
-         background: #fff;
-      }
-   }
-}
+// .nav-standard{
+//    &:after{
+//       position: absolute;
+//    content: "";
+//    width: 100%;
+//    height: 90px;
+//    top: 0;
+//    left: 0;
+//    background-color: rgba(36,33,24,0.3);
+//    z-index: -1;
+//    }
+//    .navbar{
+//       background-color: #fff;
+//       .navbar-nav{
+//          .dropdown{
+//             a{
+//                color: #000;
+//             }
+//          }
+//       }
+//    }
+//    .nav-search{
+//       background: #ffff;
+//       span{
+//          i{
+//             &.icon{
+//                color: #000;
+//             }
+//          }
+//       }
+//    }
+//    .search-block{
+//       right: 150px;
+//       bottom: -55px;
+//       .search-close{
+//          color: #000;
+//          position: absolute;
+//          top: -50px;
+//          right: 15px;
+//          background: #fff;
+//       }
+//    }
+// }
 
 
 /* Home 2 */
@@ -689,6 +713,37 @@ ul.navbar-nav {
 
 }
 
+// hader standerd
+
+.header-standard {
+
+   .navbar-brand {
+      margin-bottom: -25px;
+      -webkit-box-shadow: 0px 5px 20px 0px rgba(7, 25, 60, 0.1);
+      box-shadow: 0px 5px 20px 0px rgba(7, 25, 60, 0.1);
+      position: relative;
+      z-index: 11;
+      background: #fff;
+      max-width: 120px;
+      // padding: 15px;
+      display: block;
+      }
+      .navbar {
+         background-color: #fff;
+     }
+     .nav-item > a {
+      color: #000;
+      line-height: 94px;
+      &::after {
+         border-color: #000;
+      }
+  }
+
+   &.navbar-sticky{
+      padding: 0;
+      background: #fff;
+   }
+}
 /* Home 4 */
 
 .header-classic{

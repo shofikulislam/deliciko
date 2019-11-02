@@ -109,6 +109,17 @@ h6 {
 	font-size: 22px;
 	line-height: 28px;
 }
+
+.ts-award-title {
+    font-size: 20px;
+    color: #222222;
+    font-weight: 400;
+    font-family: "ZCOOL XiaoWei";
+}
+
+.ts-award-inner img {
+    margin-bottom: 20px;
+}
 .ts-post-title,
 .ts-author-title{
 	font-size: 20px;
@@ -125,7 +136,11 @@ h6 {
 	}
 }
 .title-white{
-	color: #fff;
+	color: #fff !important;
+}
+
+.color-black{
+	color: #2c2c2c !important;
 }
 
 /*=========================
@@ -184,6 +199,9 @@ h6 {
 .mr-0{
 	margin-right: 0px !important;
 }
+.mt-0 {
+	margin-top: 0px !important;
+}
 .mt-5 {
 	margin-top: 5px !important;
 }
@@ -196,8 +214,14 @@ h6 {
 .mt-60 {
 	margin-top: 60px !important;
 }
+.mt-70 {
+	margin-top: 70px !important;
+}
 .mt-80 {
 	margin-top: 80px !important;
+}
+.mt-100 {
+	margin-top: 100px !important;
 }
 .mr-30 {
 	margin-right: 30px !important;
@@ -255,7 +279,23 @@ h6 {
 .pb-100 {
 	padding-bottom: 100px;
 }
-
+.gap-30 {
+	clear: both;
+	height: 30px;
+ }
+ .gap-40 {
+	clear: both;
+	height: 40px;
+ }
+ 
+ .gap-60 {
+	clear: both;
+	height: 60px;
+ }
+ .gap-80 {
+	clear: both;
+	height: 80px;
+ }
 //section padding
 
 .section-padding{
@@ -313,7 +353,7 @@ button:focus {
 }
 
 .btn-border{
-	border: 1px solid #fff;
+	border: 1px solid #bc906b;
 	color: #fff !important;
 	&:hover{
 		background: #bc906b;
@@ -368,30 +408,31 @@ button:focus {
 .column-title{
 	margin-bottom: 20px;
 	text-align: center;
-	font-size: 36px;
+	font-size: 26px;
 	font-weight: 400;
 	color: #2c2c2c;
+	font-family: 'ZCOOL XiaoWei', serif;
 	span{
 	 color: $title-color;
 	 margin-bottom: 15px;
 	}
  }
 
-.title-border{
-	position: relative;
-	&:before{
-		content: '';
-    position: absolute;
-    bottom: -20px;
-    height: 1px;
-    width: 40px;
-		left: 0;
-		right: 0;
-		margin: auto;
-    z-index: 0;
-		border-bottom: 3px solid #bc906b;
-	}
-}
+// .title-border{
+// 	position: relative;
+// 	&:before{
+// 		content: '';
+//     position: absolute;
+//     bottom: -20px;
+//     height: 1px;
+//     width: 40px;
+// 		left: 0;
+// 		right: 0;
+// 		margin: auto;
+//     z-index: 0;
+// 		border-bottom: 3px solid #bc906b;
+// 	}
+// }
 
 .ts-title-bg{
 	padding: 165px 80px 70px;
@@ -431,6 +472,69 @@ z-index: 9;
 	 font-size: 24px;
 	 line-height: 32px;
  }
+ /* TS sectin title*/
+.ts-section-title {
+	.title-border {
+		position: relative;
+		&:after {
+			position: absolute;
+			left: 0;
+			right: 0;
+			margin: auto;
+			// height: 3px;
+			// width: 40px;
+			// background: black;
+			content: '';
+			// bottom: 0%;
+			-webkit-transform: translateX(0%);
+			-ms-transform: translateX(0%);
+			transform: translateX(0%);
+			background: #bc906b;
+			width: 30px;
+			height: 3px;
+			bottom: -35%;
+		  }
+	  }
+	  .section-title {
+		margin-bottom: 45px;
+		font-size: 54px;
+		font-weight: 400;
+		font-family: "Cookie", cursive;
+		span {
+			color: #2c2c2c;
+			margin-bottom: 15px;
+		  }
+	  }
+	  .title-bold {
+		font-size: 64px;
+	  }
+	  i {
+		display: block;
+		&.icon {
+			font-size: 25px;
+			color: #c4c4c4;
+		  }
+	  }
+	  &.title-left {
+		  text-align: left;
+		.title-border{
+			&:after {
+				right: auto;
+			  }
+		}
+	  }
+	  &.title-right {
+		  text-align: right;
+		.title-border{
+			&:after {
+				left: auto;
+			  }
+		}
+	  }
+}
+.title-center {
+	text-align: center;
+}
 
  /* Colors */
 
@@ -478,7 +582,7 @@ z-index: 9;
 	color: #01b33b;
 }
 .color-orange{
-	color: #bc906b;
+	color: #bc906b !important;
 }
 .color-white{
 	color: #fff;
@@ -615,6 +719,8 @@ z-index: 9;
 
 
 
+
+ 
 
 
 
