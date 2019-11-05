@@ -395,9 +395,9 @@ $(".features-slider-classic").owlCarousel({
      funfact 
 ============================================================*/
      var skl = true;
-     $('.ts-funfact').appear();
+     $('.ts-funfact, .ts-funfact-area').appear();
   
-     $('.ts-funfact').on('appear', function () {
+     $('.ts-funfact, .ts-funfact-area').on('appear', function () {
         if (skl) {
            $('.counterUp').each(function () {
               var $this = $(this);
