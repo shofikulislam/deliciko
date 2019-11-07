@@ -246,6 +246,38 @@ $(".features-slider-classic").owlCarousel({
    
       });
    }
+
+   if ($('.feature-slider-2').length > 0) {
+      $('.feature-slider-2').owlCarousel({
+         items: 1,
+         loop: true,
+         autoplay: false,
+         nav: true,
+         dots: false,
+         autoplayTimeout: 8000,
+         autoplayHoverPause: true,
+         mouseDrag: true,
+         smartSpeed: 1100,
+         margin: 10,
+         navText: ['<i class="icon icon-chevron-left">', '<i class="icon icon-chevron-right">'],
+         responsive: {
+            0: {
+               items: 1,
+               nav: false,
+               mouseDrag: false,
+
+            },
+            600: {
+               items: 1,
+               nav: false,
+            },
+            1000: {
+               items: 1,
+            }
+         }
+   
+      });
+   }
    // owl trigger
    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
       e.target // newly activated tab
@@ -502,6 +534,19 @@ $(".features-slider-classic").owlCarousel({
    //    $(window).resize(isotope);
    // } // End is_exists
 
+ /*==========================================================
+                    review rating circle
+        ======================================================================*/
+        
+         $('.review-chart').easyPieChart({
+           scaleColor: "",
+           lineWidth: 3,
+           lineCap: 'butt',
+           barColor: '#bc906b',
+           trackColor:	"rgba(0,0,0, .30)",
+           size: 35,
+           animate: 35
+         });
 
 
    /* ----------------------------------------------------------- */

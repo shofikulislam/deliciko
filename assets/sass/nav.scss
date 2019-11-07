@@ -885,70 +885,91 @@ ul.navbar-nav {
    }
 }
 
-.header-classic .navbar-container .navbar-light .navbar-toggler {
-   margin: 15px 0;
+.header-classic {
+   .navbar-container {
+      .navbar-light {
+         .navbar-toggler {
+            margin: 15px 0;
+         }
+
+         .navbar-nav {
+            >li {
+               position: relative;
+
+               &:after,
+               &:before {
+                  position: absolute;
+                  right: 30px;
+                  content: '';
+                  width: 5px;
+                  height: 5px;
+                  border-radius: 50%;
+                  -webkit-border-radius: 50%;
+                  -ms-border-radius: 50%;
+                  background: #2c2c2c;
+                  bottom: 10px;
+                  margin: auto;
+                  left: -10px;
+                  opacity: 0;
+                  -o-transition: all 0.4s ease;
+                  transition: all 0.4s ease;
+                  -webkit-transition: all 0.4s ease;
+                  -moz-transition: all 0.4s ease;
+                  -ms-transition: all 0.4s ease;
+                  -webkit-transform: scale(0);
+                  -ms-transform: scale(0);
+                  transform: scale(0);
+               }
+
+               &:after {
+                  left: 0;
+                  right: -20px;
+               }
+
+               &:last-child>a:before {
+                  display: block;
+               }
+
+               a {
+                  &:before {
+                     position: absolute;
+                     content: '';
+                     width: 5px;
+                     height: 5px;
+                     border-radius: 50%;
+                     -webkit-border-radius: 50%;
+                     -ms-border-radius: 50%;
+                     background: #2c2c2c;
+                     margin: auto;
+                     right: 10px;
+                     left: 0;
+                     bottom: 10px;
+                     top: auto;
+                     opacity: 0;
+                     -o-transition: all 0.4s ease;
+                     transition: all 0.4s ease;
+                     -webkit-transition: all 0.4s ease;
+                     -moz-transition: all 0.4s ease;
+                     -ms-transition: all 0.4s ease;
+                     -webkit-transform: scale(0);
+                     -ms-transform: scale(0);
+                     transform: scale(0);
+                  }
+               }
+            }
+         }
+      }
+   }
 }
 
-.header-classic .navbar-container .navbar-light>li {
-   position: relative;
-}
 
-.header-classic .navbar-container .navbar-light>li:before,
-.header-classic .navbar-container .navbar-light>li:after {
-   position: absolute;
-   right: 13px;
-   content: '';
-   width: 5px;
-   height: 5px;
-   border-radius: 50%;
-   -webkit-border-radius: 50%;
-   -ms-border-radius: 50%;
-   background: #2c2c2c;
-   bottom: 10px;
-   margin: auto;
-   left: -10px;
-}
 
-.header-classic .navbar-container .navbar-light>li:after {
-   left: 0;
-   right: -26px;
-}
-
-.header-classic .navbar-container .navbar-light>li:last-child>a:before {
-   display: block;
-}
-
-.header-classic .navbar-container .navbar-light>li>a {
-   line-height: 66px;
-}
-
-.header-classic .navbar-container .navbar-light>li>a:before {
-   right: 0;
-   left: 0;
-   bottom: 10px;
-   top: auto;
-}
-
-.header-classic .navbar-container .navbar-light>li:before,
-.header-classic .navbar-container .navbar-light>li:after,
-.header-classic .navbar-container .navbar-light>li>a:before {
-   opacity: 0;
-   -o-transition: all 0.4s ease;
-   transition: all 0.4s ease;
-   -webkit-transition: all 0.4s ease;
-   -moz-transition: all 0.4s ease;
-   -ms-transition: all 0.4s ease;
-   -webkit-transform: scale(0);
-   -ms-transform: scale(0);
-   transform: scale(0);
-}
-
-.header-classic .navbar-container .navbar-light>li:hover:before,
-.header-classic .navbar-container .navbar-light>li.active:before,
-.header-classic .navbar-container .navbar-light>li:hover:after,
-.header-classic .navbar-container .navbar-light>li.active:after,
-.header-classic .navbar-container .navbar-light>li:hover>a:before,
-.header-classic .navbar-container .navbar-light>li.active>a:before {
+.header-classic .navbar-container .navbar-light .navbar-nav>li>.header-classic .navbar-container .navbar-light .navbar-nav>li:hover:before,
+.header-classic .navbar-container .navbar-light .navbar-nav>li.active:before,
+.header-classic .navbar-container .navbar-light .navbar-nav>li:hover:after,
+.header-classic .navbar-container .navbar-light .navbar-nav>li.active:after,
+.header-classic .navbar-container .navbar-light .navbar-nav>li:hover>a:before,
+.header-classic .navbar-container .navbar-light .navbar-nav>li.active>a:before {
    opacity: 1;
    -webkit-transform: scale(1);
    -ms-transform: scale(1);
