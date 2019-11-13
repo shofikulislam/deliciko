@@ -1,4 +1,19 @@
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 1200px) {
+  .padding-left-0 {
+    padding-left: 0;
+  }
+  .padding-right-0 {
+    padding-right: 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .padding-left-0 {
+    padding-left: 0;
+  }
+  .padding-right-0 {
+    padding-right: 0;
+  }
   .main-logo {
     padding: 46px 10px;
   }
@@ -59,7 +74,8 @@
     padding: 25px 0px;
     margin-bottom: 15px;
   }
-  .top-bar .header-nav-right-info, .top-bar li {
+  .top-bar .header-nav-right-info,
+  .top-bar li {
     padding: 0;
   }
   .navbar {
@@ -67,7 +83,7 @@
   }
   .navbar-sticky.sticky {
     position: relative;
-    display: none;
+    display: block;
   }
   .header-classic .right-menu .nav-button {
     display: none;
@@ -120,6 +136,16 @@
   }
   .hero-slider .pl-0 {
     padding-left: 15px !important;
+  }
+  .hero-slider .slider-item .slider-content p .slider-sub-title:before,
+  .hero-slider .slider-item .slider-content p .slider-sub-title::after {
+    display: none;
+  }
+  .hero-slider .slider-item .slider-content {
+    margin-top: 0;
+  }
+  .hero-slider.features-slider-classic .slider-content p {
+    font-size: 65px;
   }
   .nav-menus-wrapper {
     background: #bc906b;
@@ -191,12 +217,21 @@
   .ts-footer-info-box span.box-border {
     border-top: 37px solid #bc906b;
   }
+  .intro-about-area .intro-about .intro-about-item .intro-about-box {
+    margin-bottom: 20px;
+  }
+  .ts-cta-area .cta-title h2 {
+    font-size: 45px;
+  }
   .cta-title,
   .cta-btn {
     text-align: center !important;
   }
   .cta-btn {
     margin-top: 20px;
+  }
+  .ts-daily-offer .daily-offer-banner {
+    margin-bottom: 30px;
   }
   .ts-latest-news .single-latest-news {
     margin-bottom: 40px;
@@ -246,6 +281,11 @@
   }
   .navbar-nav {
     text-align: left;
+    padding-left: 20px;
+  }
+  .nav-item > a {
+    color: #fff !important;
+    line-height: 60px !important;
   }
   .nav-item a:after {
     display: none;
@@ -271,6 +311,16 @@
   .ts-service-content {
     margin-top: 50px;
   }
+  /* Home 2 */
+  .header.header-standard .navbar-collapse,
+  .header-classic .navbar-collapse {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+    top: 100%;
+    padding: 0 10px;
+  }
   /* Home 4 */
   .ts-nav-classic .top-bar {
     display: none;
@@ -295,6 +345,7 @@
   }
   #header .navbar-collapse {
     background: #101010;
+    z-index: 999;
   }
   #header .navbar {
     width: 100%;
@@ -315,19 +366,82 @@
   }
   .ts-footer {
     margin-top: 0px;
+    text-align: center;
+  }
+  .ts-footer .textwidget p {
+    margin: 20px 0;
   }
   .header-box .logo-area {
     text-align: center;
     margin-bottom: 20px;
   }
-  .ts-shaps, .ts-shaps-2,
-  .ts-shaps-3, .ts-shaps-4,
-  .ts-shaps-5 {
+  .ts-shaps,
+  .ts-shaps-2,
+  .ts-shaps-3,
+  .ts-shaps-4,
+  .ts-shaps-5,
+  .ts-shaps-6,
+  .ts-shaps-7 {
     display: none;
   }
   .quote-area .quote_form {
     position: relative;
     top: 0;
+  }
+  .single-blog {
+    margin-bottom: 30px;
+  }
+  .ts-footer .ts-subscribe {
+    padding-left: 0;
+  }
+  .ts-footer .textwidget p {
+    padding-right: 0;
+  }
+  .ts-tab-menu .nav-menu-tabs li a i.icon {
+    margin: 0;
+  }
+  .ts-award {
+    margin-bottom: 30px;
+  }
+  .dishes-offer-wrapper {
+    margin-bottom: 20px;
+  }
+  .ts-tab-menu-2 .nav-menu-tabs li a i.icon {
+    margin: 0;
+  }
+  .ts-resarve .content {
+    padding: 50px 20px;
+  }
+  .intro-about-area .intro-about .about-img {
+    margin-top: 60px;
+  }
+  .menu-cat-img {
+    display: none;
+  }
+  .intro-about .ts-title {
+    margin-top: 80px;
+  }
+  .set-menu-img {
+    text-align: center;
+  }
+  .party-area-image {
+    text-align: center;
+    margin-top: 70px;
+  }
+  .history-img {
+    margin-bottom: 50px;
+  }
+  .ts-single-funfact {
+    margin: 20px;
+  }
+  .mapouter {
+    margin-top: 50px;
+  }
+  .vertical-grid-post-area .post-thumb img {
+    height: auto;
+  }
+  .vertical-grid-post-area2 .post-content {
+    margin-top: 30px;
   }
 }
 
@@ -717,10 +831,13 @@
   .header-box .logo-area {
     text-align: center;
   }
-  .ts-shaps {
-    display: none;
-  }
-  .ts-shaps-2 {
+  .ts-shaps,
+  .ts-shaps-2,
+  .ts-shaps-3,
+  .ts-shaps-4,
+  .ts-shaps-5,
+  .ts-shaps-6,
+  .ts-shaps-7 {
     display: none;
   }
   .quote-area .quote_form {
@@ -730,5 +847,96 @@
   .hero-slider .slider-item .slider-content p .slider-sub-title:before,
   .hero-slider .slider-item .slider-content p .slider-sub-title:after {
     display: none;
+  }
+  .ts-chef-info {
+    margin: 20px 0;
+  }
+  .ts-single-funfact {
+    margin: 10px 0;
+  }
+  .intro-about-area .intro-about .intro-about-item .intro-about-box {
+    margin-bottom: 20px;
+  }
+  .ts-daily-offer .daily-offer-banner {
+    margin-bottom: 30px;
+  }
+  .ts-footer {
+    text-align: center;
+  }
+  .ts-footer .ts-subscribe {
+    padding-left: 0;
+  }
+  .ts-footer .textwidget p {
+    padding-right: 0;
+  }
+  .hero-slider.features-slider-classic .owl-nav {
+    display: none;
+  }
+  .hero-slider.features-slider-classic .slider-content p {
+    font-size: 40px;
+    line-height: 60px;
+    margin-bottom: 10px;
+  }
+  .ts-award {
+    margin-bottom: 30px;
+  }
+  .dishes-offer-wrapper {
+    margin-bottom: 20px;
+  }
+  .ts-tab-menu-2 .nav-menu-tabs li a i.icon {
+    margin: 0;
+  }
+  .ts-resarve .content {
+    padding: 50px 20px;
+  }
+  .intro-about-area .intro-about .about-img {
+    margin-top: 60px;
+    margin-left: 0px;
+  }
+  .menu-cat-img {
+    display: none;
+  }
+  .intro-about .ts-title {
+    margin-top: 80px;
+  }
+  .set-menu-img {
+    text-align: center;
+  }
+  .party-area-image {
+    text-align: center;
+    margin-top: 70px;
+  }
+  .history-img {
+    margin-bottom: 50px;
+  }
+  .ts-single-funfact {
+    margin: 20px;
+  }
+  .mapouter {
+    margin-top: 50px;
+  }
+  .vertical-grid-post-area .post-thumb img {
+    height: auto;
+  }
+  .vertical-grid-post-area2 .post-content {
+    margin-top: 30px;
+  }
+  .ts-resarve-2 {
+    text-align: center;
+  }
+  .ts-chef .ts-chef-info {
+    text-align: center;
+  }
+  .mb-30 {
+    margin-bottom: 0;
+  }
+  .ts-gallery-classic {
+    text-align: center;
+  }
+  .ts-block-gallery.columns-2 {
+    text-align: center;
+  }
+  .blocks-gallery-item {
+    margin: 10px 0;
   }
 }

@@ -34,55 +34,7 @@
    &.features-slider {
       position: relative;
 
-      // .owl-nav {
-      //    display: block;
-      //    .owl-prev,
-      //    .owl-next {
-      //       font-size: 50px;
-      //       position: absolute;
-      //       bottom: 0;
-      //       transform: translateY(-50%);
-      //       z-index: 5;
-      //       display: inline-block;
-      //       color: #fff;
-      //       line-height: 30px;
-      //       padding: 20px;
-
-      //       &:focus {
-      //          outline: none;
-      //       }
-
-      //       &:hover {
-      //          outline: none;
-
-      //          i {
-      //             background: $color-primary;
-      //          }
-      //       }
-      //    }
-
-      //    .owl-next {
-      //       left: 92px;
-      //    }
-
-      //    .owl-prev {
-      //       left: 60px;
-      //    }
-
-      //    i {
-      //       color: $white-color;
-      //       line-height: 58px;
-      //       width: 60px;
-      //       height: 60px;
-      //       font-size: 20px !important;
-      //       padding: 5px 6px;
-      //       border-radius: 0;
-      //       background: #24272a;
-      //    }
-      // }
-      // .owl-dots{
-      //    display: none;
-      // }
+      
       .owl-nav {
          display: none;
       }
