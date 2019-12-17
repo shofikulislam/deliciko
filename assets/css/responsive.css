@@ -12,6 +12,26 @@
     display: unset;
     visibility: visible;
   }
+  #header .navbar-container .row {
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+  }
+  .ts-d-none {
+    display: none !important;
+  }
+  .ts-cta-area .cta-title h2 {
+    font-size: 48px;
+  }
+  .ts-resarve-area .column-title {
+    font-size: 22px;
+  }
+  .dishes-offer-wrapper {
+    padding: 80px 90px 80px 50px;
+  }
+  .today-offer-info {
+    padding: 63px 20px;
+  }
   .hero-slider .owl-dots {
     right: 75px;
   }

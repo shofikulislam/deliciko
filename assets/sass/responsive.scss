@@ -27,12 +27,25 @@
     // .header-right-btn {
     //     display: none;
     // }
-    // #header .navbar-container .row {
-    //     justify-content: flex-end;
-    // }
+    #header .navbar-container .row {
+        justify-content: flex-end;
+    }
     
-    // .col-lg-2.d-none.d-lg-block {display: none !important;}
+    .ts-d-none{display: none !important;}
 
+    .ts-cta-area .cta-title h2 {
+        font-size: 48px;
+    }
+    
+    .ts-resarve-area .column-title {
+        font-size: 22px;
+    }
+    .dishes-offer-wrapper {
+        padding: 80px 90px 80px 50px;
+    }
+    .today-offer-info {
+        padding: 63px 20px;
+    }
     // Home one
     .hero-slider .owl-dots {
         right: 75px;
