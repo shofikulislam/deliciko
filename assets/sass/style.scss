@@ -170,7 +170,7 @@ body {
 // hero slider item
 .hero-slider {
 	.slider-item {
-		height: 800px;
+		height: 840px;
 		background-repeat: no-repeat;
 		background-size: cover;
 		background-position: center center;
@@ -189,7 +189,6 @@ body {
 		.slider-content {
 			height: auto;
 			color: #fff;
-			margin-top: 120px;
 
 			.slider-title {
 				font-size: 58px;
@@ -240,7 +239,8 @@ body {
 
 			.btn-area {
 				.btn-border {
-					margin-left: 30px;
+					// margin-left: 30px;
+					color:#fff !important;
 				}
 			}
 		}
@@ -476,7 +476,11 @@ body {
 		}
 	}
 
-
+	.btn {
+		padding: 15px 40px 15px 40px;
+		font-family: "Roboto", sans-serif;
+		letter-spacing: 0.7px;
+	}
 
 }
 
@@ -510,7 +514,7 @@ body {
 		padding: 30px;
 
 		.daily-offer-intro {
-			border: 1px solid #fff;
+			border: 1px solid #ffffff38;
 			padding: 50px 190px 50px 40px;
 
 			.offer-title {
@@ -538,6 +542,9 @@ body {
 				margin-bottom: 45px;
 			}
 		}
+	}
+	.menu-block .inner-box .info .price {
+		font-size: 26px;
 	}
 }
 
@@ -799,7 +806,7 @@ body {
  =================================*/
 
 .ts-funfact {
-	padding: 80px 0;
+	padding: 110px 0 0;
 }
 
 .ts-single-funfact {
@@ -811,19 +818,21 @@ body {
 			font-size: 115px;
 			position: absolute;
 			left: 10px;
-			top: -50px;
+			top: -40px;
 			z-index: -1;
-			color: rgba(247, 247, 247, 0.8);
+			color: #f5f5f5;
+			border-color: #f5f5f5;
 		}
 	}
 
 
 
 	.funfact-num {
-		font-size: 52px;
-		font-weight: 900;
-		color: $color-primary;
+		font-size: 40px;
+		font-weight: 400;
+		color: #bc906b;
 		margin-bottom: 15px;
+		font-family: "Open Sans";
 	}
 
 	.funfact-title {
@@ -1087,10 +1096,11 @@ span {
 		i {
 			position: relative;
 			top: 10px;
-			left: 25%;
-			font-size: 65px;
+			left: 50%;
+			font-size: 80px;
 			color: #f1ece9;
 			z-index: -1;
+			margin-left: -50px;
 		}
 	}
 }
@@ -1312,9 +1322,10 @@ span {
 	}
 
 	h4 {
-		font-size: 28px;
-		font-weight: 400;
+		font-size: 24px;
+		font-weight: 700;
 		margin-bottom: 20px;
+		font-family: "Open Sans", Sans-serif;
 	}
 
 	p {
@@ -1338,6 +1349,8 @@ span {
 
 	.btn-primary {
 		margin-top: 20px;
+		letter-spacing: 0.7px;
+    	padding: 15px 45px 15px 45px;
 	}
 
 	.service-time li {
@@ -1544,7 +1557,7 @@ span {
 
 .menu-section {
 	position: relative;
-	padding: 100px 0px 70px;
+	padding: 100px 0px 50px;
 
 	&.style-two {
 		background-size: cover;
@@ -1653,6 +1666,11 @@ span {
 				line-height: 25px;
 				padding-left: 20px;
 				background-color: #ffffff;
+				i {
+					font-size: 28px;
+					font-weight: 400;
+					margin-right: 4px;
+				}
 			}
 		}
 
@@ -1668,7 +1686,9 @@ span {
 	.img-effect {
 		overflow: unset;
 	}
-
+	.set-menu-img {
+		overflow: hidden;
+	}
 	// Image box
 
 	.img-box {
@@ -1750,6 +1770,11 @@ span {
 				margin-bottom: 55px;
 			}
 		}
+	}
+	.btn {
+		padding: 15px 40px 15px 40px;
+		font-family: "Roboto", sans-serif;
+		letter-spacing: 0.7px;
 	}
 }
 
@@ -2139,8 +2164,8 @@ span {
 			a {
 				color: #bc906b;
 				font-size: 14px;
-				margin-right: 5px;
-				margin-left: 10px;
+				// margin-right: 5px;
+				// margin-left: 10px;
 			}
 
 			// img {
@@ -2167,8 +2192,8 @@ span {
 		a {
 			color: #bc906b;
 			font-size: 14px;
-			margin-right: 5px;
-			margin-left: 10px;
+			// margin-right: 5px;
+			// margin-left: 10px;
 		}
 	}
 
@@ -3441,81 +3466,85 @@ blockquote cite:before {
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	position: relative;
 
 
 	.intro-about {
-		.intro-about-item {
-			.intro-about-box {
-				box-shadow: 0px 10px 30px 0px rgba(44, 44, 44, 0.07);
-				position: relative;
+		.intro-about-box {
+			box-shadow: 0px 10px 30px 0px rgba(44, 44, 44, 0.07);
+			position: relative;
 
+			.ts-column {
+				.column-title {
+					margin-top: 35px;
+				}
+
+				p {
+					position: relative;
+					z-index: 1;
+				}
+
+				i {
+					display: inline-block;
+
+					&.icon {
+						font-size: 50px;
+						color: $color-primary;
+					}
+				}
+
+				&:after {
+					position: absolute;
+					content: '\e945';
+					right: 0;
+					bottom: 50px;
+					font-family: 'iconfont';
+					font-size: 125px;
+					color: rgba(247, 247, 247, 0.80);
+				}
+			}
+
+			&.intro-about-box-two {
 				.ts-column {
-					.column-title {
-						margin-top: 35px;
-					}
-
-					p {
-						position: relative;
-						z-index: 1;
-					}
-
-					i {
-						display: inline-block;
-
-						&.icon {
-							font-size: 50px;
-							color: $color-primary;
-						}
-					}
-
 					&:after {
-						position: absolute;
-						content: '\e945';
-						right: 0;
-						bottom: 50px;
-						font-family: 'iconfont';
-						font-size: 125px;
-						color: rgba(247, 247, 247, 0.80);
+						content: '\e947';
 					}
 				}
+			}
 
-				&.intro-about-box-two {
-					.ts-column {
-						&:after {
-							content: '\e947';
-						}
+			&.intro-about-box-three {
+				.ts-column {
+					&:after {
+						content: '\e949';
 					}
 				}
+			}
 
-				&.intro-about-box-three {
-					.ts-column {
-						&:after {
-							content: '\e949';
-						}
-					}
-				}
-
-				&:hover i {
-					-webkit-backface-visibility: hidden;
-					backface-visibility: hidden;
-					-webkit-animation: bounce .4s ease-in-out 2 alternate;
-					animation: bounce .4s ease-in-out 2 alternate;
-				}
+			&:hover i {
+				-webkit-backface-visibility: hidden;
+				backface-visibility: hidden;
+				-webkit-animation: bounce .4s ease-in-out 2 alternate;
+				animation: bounce .4s ease-in-out 2 alternate;
 			}
 		}
 
+
 		.about-img {
-			margin-left: 65px;
+			// margin-left: 65px;
+			text-align: right;
+			overflow: hidden;
 		}
 
 		.about-story-text {
-			font-size: 15px;
+			font-size: 16px;
+			color: #666666;
+			margin-bottom: 25px;
 		}
 	}
 }
 
 .intro-about {
-	margin-top: -70px;
+	margin-top: -100px;
 	position: relative;
 	z-index: 1;
 
@@ -3586,12 +3615,7 @@ blockquote cite:before {
 
 
 
-// intro funfact
-.intro-about-item {
-	background: none;
-	margin: 0px 0px 0px;
 
-}
 
 .funfact-item {
 	display: flex;
@@ -3985,15 +4009,15 @@ blockquote cite:before {
 	}
 }
 
-.banner-heading {
-	padding-top: 250px;
-}
+// .banner-heading {
+// 	padding-top: 250px;
+// }
 
 
-.banner-heading {
-	position: absolute;
-	top: 50%;
-}
+// .banner-heading {
+// 	position: absolute;
+// 	top: 50%;
+// }
 
 
 
@@ -4492,10 +4516,11 @@ blockquote cite:before {
 		box-shadow: 0px 10px 30px 0px rgba(44, 44, 44, 0.07);
 		transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 	}
-	
+
 }
+
 .party-area-image {
-    text-align: right;
+	text-align: right;
 }
 
 /* ==========================
@@ -4504,7 +4529,7 @@ blockquote cite:before {
 
 =============================*/
 .ts-footer {
-	padding: 50px 0 0px;
+	padding: 80px 0 0;
 	background-color: #191919;
 	position: relative;
 	z-index: 2;
@@ -4651,7 +4676,7 @@ blockquote cite:before {
 .BackTo {
 	background: $color-primary none repeat scroll 0 0;
 	border-radius: 50%;
-	bottom: 35px;
+	bottom: 28px;
 	color: #979797;
 	cursor: pointer;
 	height: 44px;

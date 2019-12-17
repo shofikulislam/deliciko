@@ -1,8 +1,8 @@
 /*
 	Template Name: Deliciko
-	Author: Themefunction
+	Author: 
 	Version: 1.0
-	Author URI: https://themeforest.net/user/themefunction/portfolio
+	Author URI: 
 	Description: Deliciko Resturent html template. 
   
 =====================
@@ -17,16 +17,16 @@
 6.  	Features Section
 7.		Service Section
 8.		call to action
-9.		Project Area
+9.		Gallery Area
 10.  	funfact area 
 11.		Testimonial
-12.		Latest News
-13.		Partners
+12.		Latest News Update
+13.		Chefs
 14.  	Footer area
 15.  	About us 
-16.  	Service details 
-17.  	Faq area 
-18.		Pricing Table
+16.  	Menu details 
+17.  	Daily Offers area 
+18.		Pricing Area
 19.		404 Page	
 20.		Blog
 21.		Blog details
@@ -378,9 +378,14 @@ button:focus {
 }
 
 .btn-primary:hover {
-  background: #222222;
+  background: #bc8151;
   color: #fff;
-  border-color: #222222;
+  border-color: #bc8151;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-primary::focus {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
@@ -398,12 +403,12 @@ button:focus {
 
 .btn-border {
   border: 1px solid #bc906b;
-  color: #fff !important;
+  color: #bc906b !important;
 }
 
 .btn-border:hover {
   background: #bc906b;
-  color: #222222;
+  color: #fff !important;
   border-color: #bc906b;
 }
 
@@ -436,7 +441,7 @@ button:focus {
 .ts-title .section-title {
   margin-bottom: 20px;
   text-align: center;
-  font-size: 48px;
+  font-size: 54px;
   font-weight: 400;
   color: #2c2c2c;
 }
@@ -706,9 +711,10 @@ button:focus {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   margin-top: 0px;
-  min-height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
+  padding: 160px 0;
 }
 
 .banner-area .container {
@@ -718,9 +724,11 @@ button:focus {
 .banner-title {
   color: #fff;
   font-size: 74px;
-  line-height: 115px;
+  line-height: 90px;
   font-weight: 400;
   margin-bottom: 20px;
+  font-family: "ZCOOL XiaoWei";
+  margin-top: 90px;
 }
 
 .banner-title span {
@@ -751,15 +759,15 @@ button:focus {
   align-items: center;
   -ms-flex-line-pack: center;
   align-content: center;
-  min-height: 225px;
 }
 
 .breadcrumb {
   padding: 0;
   background: none;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 500;
   text-transform: uppercase;
+  margin: 10px 0;
 }
 
 .breadcrumb li a {
@@ -767,7 +775,7 @@ button:focus {
 }
 
 .breadcrumb li a:hover {
-  color: #007bff;
+  color: #bc906b;
 }
 
 .breadcrumb a:hover {
@@ -779,9 +787,10 @@ button:focus {
 }
 
 .breadcrumb li:not(:last-child):after {
-  padding: 0 5px;
+  padding: 0 15px;
   color: #fff;
-  content: "/\00a0";
+  content: "\e945";
+  font-family: 'iconfont';
 }
 
 .border-none {
@@ -951,7 +960,7 @@ body.boxed-layout {
 /*    Home 
 =========================*/
 .hero-slider .slider-item {
-  height: 800px;
+  height: 840px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -971,7 +980,6 @@ body.boxed-layout {
 .hero-slider .slider-item .slider-content {
   height: auto;
   color: #fff;
-  margin-top: 120px;
 }
 
 .hero-slider .slider-item .slider-content .slider-title {
@@ -1020,7 +1028,7 @@ body.boxed-layout {
 }
 
 .hero-slider .slider-item .slider-content .btn-area .btn-border {
-  margin-left: 30px;
+  color: #fff !important;
 }
 
 .hero-table {
@@ -1210,6 +1218,12 @@ body.boxed-layout {
   margin-bottom: 0px;
 }
 
+.ts-cta-area .btn {
+  padding: 15px 40px 15px 40px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.7px;
+}
+
 /* ts-cta-area-classic */
 .ts-cta-area-classic {
   background-image: url(../images/cta_img2.jpg);
@@ -1240,7 +1254,7 @@ body.boxed-layout {
 }
 
 .ts-daily-offer .daily-offer-banner .daily-offer-intro {
-  border: 1px solid #fff;
+  border: 1px solid #ffffff38;
   padding: 50px 190px 50px 40px;
 }
 
@@ -1267,6 +1281,10 @@ body.boxed-layout {
   line-height: 26px;
   color: #fff;
   margin-bottom: 45px;
+}
+
+.ts-daily-offer .menu-block .inner-box .info .price {
+  font-size: 26px;
 }
 
 /***
@@ -1511,7 +1529,7 @@ body.boxed-layout {
   start  funfact section
  =================================*/
 .ts-funfact {
-  padding: 80px 0;
+  padding: 110px 0 0;
 }
 
 .ts-single-funfact {
@@ -1522,16 +1540,18 @@ body.boxed-layout {
   font-size: 115px;
   position: absolute;
   left: 10px;
-  top: -50px;
+  top: -40px;
   z-index: -1;
-  color: rgba(247, 247, 247, 0.8);
+  color: #f5f5f5;
+  border-color: #f5f5f5;
 }
 
 .ts-single-funfact .funfact-num {
-  font-size: 52px;
-  font-weight: 900;
+  font-size: 40px;
+  font-weight: 400;
   color: #bc906b;
   margin-bottom: 15px;
+  font-family: "Open Sans";
 }
 
 .ts-single-funfact .funfact-title {
@@ -1737,10 +1757,11 @@ span.author-designation {
 .testimonial-author-content .testimonial-text i {
   position: relative;
   top: 10px;
-  left: 25%;
-  font-size: 65px;
+  left: 50%;
+  font-size: 80px;
   color: #f1ece9;
   z-index: -1;
+  margin-left: -50px;
 }
 
 /* Testimonial Classic */
@@ -1936,9 +1957,10 @@ span.author-designation {
 }
 
 .ts-contact-wrapper h4 {
-  font-size: 28px;
-  font-weight: 400;
+  font-size: 24px;
+  font-weight: 700;
   margin-bottom: 20px;
+  font-family: "Open Sans", Sans-serif;
 }
 
 .ts-contact-wrapper p {
@@ -1962,6 +1984,8 @@ span.author-designation {
 
 .ts-contact-wrapper .btn-primary {
   margin-top: 20px;
+  letter-spacing: 0.7px;
+  padding: 15px 45px 15px 45px;
 }
 
 .ts-contact-wrapper .service-time li {
@@ -2139,7 +2163,7 @@ span.author-designation {
 ***/
 .menu-section {
   position: relative;
-  padding: 100px 0px 70px;
+  padding: 100px 0px 50px;
 }
 
 .menu-section.style-two {
@@ -2245,6 +2269,12 @@ span.author-designation {
   background-color: #ffffff;
 }
 
+.menu-block .inner-box .info .price i {
+  font-size: 28px;
+  font-weight: 400;
+  margin-right: 4px;
+}
+
 .menu-block .inner-box .text {
   position: relative;
   color: #616060;
@@ -2255,6 +2285,10 @@ span.author-designation {
 
 .menu-block .img-effect {
   overflow: unset;
+}
+
+.menu-block .set-menu-img {
+  overflow: hidden;
 }
 
 .menu-block .img-box img {
@@ -2322,6 +2356,12 @@ span.author-designation {
   font-size: 24px;
   color: #fff;
   margin-bottom: 55px;
+}
+
+.cta-area .btn {
+  padding: 15px 40px 15px 40px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.7px;
 }
 
 .collapse.show:before .card {
@@ -2645,8 +2685,6 @@ span.author-designation {
 .post .post-meta .post-author a {
   color: #bc906b;
   font-size: 14px;
-  margin-right: 5px;
-  margin-left: 10px;
 }
 
 .post .post-meta span {
@@ -2665,8 +2703,6 @@ span.author-designation {
 .post .post-meta a {
   color: #bc906b;
   font-size: 14px;
-  margin-right: 5px;
-  margin-left: 10px;
 }
 
 /* blog2 */
@@ -3791,33 +3827,34 @@ blockquote cite:before {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: relative;
 }
 
-.intro-about-area .intro-about .intro-about-item .intro-about-box {
+.intro-about-area .intro-about .intro-about-box {
   -webkit-box-shadow: 0px 10px 30px 0px rgba(44, 44, 44, 0.07);
   box-shadow: 0px 10px 30px 0px rgba(44, 44, 44, 0.07);
   position: relative;
 }
 
-.intro-about-area .intro-about .intro-about-item .intro-about-box .ts-column .column-title {
+.intro-about-area .intro-about .intro-about-box .ts-column .column-title {
   margin-top: 35px;
 }
 
-.intro-about-area .intro-about .intro-about-item .intro-about-box .ts-column p {
+.intro-about-area .intro-about .intro-about-box .ts-column p {
   position: relative;
   z-index: 1;
 }
 
-.intro-about-area .intro-about .intro-about-item .intro-about-box .ts-column i {
+.intro-about-area .intro-about .intro-about-box .ts-column i {
   display: inline-block;
 }
 
-.intro-about-area .intro-about .intro-about-item .intro-about-box .ts-column i.icon {
+.intro-about-area .intro-about .intro-about-box .ts-column i.icon {
   font-size: 50px;
   color: #bc906b;
 }
 
-.intro-about-area .intro-about .intro-about-item .intro-about-box .ts-column:after {
+.intro-about-area .intro-about .intro-about-box .ts-column:after {
   position: absolute;
   content: '\e945';
   right: 0;
@@ -3827,15 +3864,15 @@ blockquote cite:before {
   color: rgba(247, 247, 247, 0.8);
 }
 
-.intro-about-area .intro-about .intro-about-item .intro-about-box.intro-about-box-two .ts-column:after {
+.intro-about-area .intro-about .intro-about-box.intro-about-box-two .ts-column:after {
   content: '\e947';
 }
 
-.intro-about-area .intro-about .intro-about-item .intro-about-box.intro-about-box-three .ts-column:after {
+.intro-about-area .intro-about .intro-about-box.intro-about-box-three .ts-column:after {
   content: '\e949';
 }
 
-.intro-about-area .intro-about .intro-about-item .intro-about-box:hover i {
+.intro-about-area .intro-about .intro-about-box:hover i {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-animation: bounce .4s ease-in-out 2 alternate;
@@ -3843,15 +3880,18 @@ blockquote cite:before {
 }
 
 .intro-about-area .intro-about .about-img {
-  margin-left: 65px;
+  text-align: right;
+  overflow: hidden;
 }
 
 .intro-about-area .intro-about .about-story-text {
-  font-size: 15px;
+  font-size: 16px;
+  color: #666666;
+  margin-bottom: 25px;
 }
 
 .intro-about {
-  margin-top: -70px;
+  margin-top: -100px;
   position: relative;
   z-index: 1;
 }
@@ -3905,11 +3945,6 @@ blockquote cite:before {
   right: 0;
   bottom: 0;
   max-width: 120px;
-}
-
-.intro-about-item {
-  background: none;
-  margin: 0px 0px 0px;
 }
 
 .funfact-item {
@@ -4261,15 +4296,6 @@ blockquote cite:before {
 
 .ts-form .form-control {
   border: 1px solid #e3e3e3;
-}
-
-.banner-heading {
-  padding-top: 250px;
-}
-
-.banner-heading {
-  position: absolute;
-  top: 50%;
 }
 
 /*			tab menu 2
@@ -4726,7 +4752,7 @@ blockquote cite:before {
 
 =============================*/
 .ts-footer {
-  padding: 50px 0 0px;
+  padding: 80px 0 0;
   background-color: #191919;
   position: relative;
   z-index: 2;
@@ -4860,7 +4886,7 @@ blockquote cite:before {
 .BackTo {
   background: #bc906b none repeat scroll 0 0;
   border-radius: 50%;
-  bottom: 35px;
+  bottom: 28px;
   color: #979797;
   cursor: pointer;
   height: 44px;
@@ -4892,6 +4918,7 @@ blockquote cite:before {
   margin-right: 0px;
   color: #fff;
   font-size: 14px;
+  line-height: 26px;
 }
 
 .top-bar li span {
@@ -4929,13 +4956,9 @@ blockquote cite:before {
   position: absolute;
   top: 0;
   left: 0;
-}
-
-@media (max-width: 1400px) {
-  .logo-area a img.img-fluid {
-    width: 140px;
-    height: auto;
-  }
+  max-width: 125px;
+  background: #fff;
+  padding: 8px;
 }
 
 .navbar {
@@ -4952,6 +4975,10 @@ blockquote cite:before {
   padding: 0 25px;
 }
 
+ul.navbar-nav > li {
+  margin: 0 10px;
+}
+
 ul.navbar-nav > li.active > a {
   color: #bc906b;
 }
@@ -4959,9 +4986,9 @@ ul.navbar-nav > li.active > a {
 ul.navbar-nav > li > a {
   font-weight: 700;
   font-size: 14px;
-  line-height: 75px;
+  line-height: 82px;
   text-transform: uppercase;
-  padding: 0px 30px 0px 30px;
+  padding: 0px 20px 0px 15px;
   display: block;
 }
 
@@ -5076,7 +5103,7 @@ ul.navbar-nav {
   border: 3px solid #fff;
   content: "";
   position: absolute;
-  right: 0;
+  right: 3px;
   top: 50%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -5142,6 +5169,8 @@ ul.navbar-nav {
   z-index: 99;
   background: #000;
   padding: 0px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.03);
 }
 
 .navbar-sticky.sticky .navbar {
@@ -5161,11 +5190,7 @@ ul.navbar-nav {
 }
 
 .navbar-sticky.sticky.header-transparent .logo-area {
-  max-width: 75px;
-}
-
-.navbar-sticky.sticky .logo {
-  max-width: 75px;
+  max-width: 94px;
 }
 
 .navbar ul > li.active > a {
@@ -5214,7 +5239,7 @@ ul.navbar-nav {
   width: 1px;
   height: 100%;
   content: '';
-  border-left: 1px solid #272320;
+  border-left: 1px solid #3a3530;
 }
 
 /* Home 2 */
@@ -5225,7 +5250,8 @@ ul.navbar-nav {
   position: relative;
   z-index: 11;
   background: #fff;
-  max-width: 120px;
+  max-width: 135px;
+  padding: 15px;
   display: block;
 }
 
@@ -5567,18 +5593,16 @@ ul.navbar-nav {
   display: block;
   margin: 10px 0px;
   top: 0;
-  line-height: 20px;
+  line-height: 0px;
 }
 
 .hero-slider .owl-dots .owl-dot span {
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  height: 5px;
   border-radius: 50%;
-  background: #59616d;
+  background: #6f6b6b;
   display: inline-block;
   opacity: 1;
-  margin: 0 3px;
-  opacity: .5;
 }
 
 .hero-slider .owl-dots .owl-dot.active span {
@@ -5588,7 +5612,7 @@ ul.navbar-nav {
   height: 15px;
   background: transparent;
   position: relative;
-  right: 3px;
+  right: 5px;
   top: 2px;
   opacity: 1;
 }

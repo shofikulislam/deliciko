@@ -1,8 +1,8 @@
 /*
 	Template Name: Deliciko
-	Author: Themefunction
+	Author: 
 	Version: 1.0
-	Author URI: https://themeforest.net/user/themefunction/portfolio
+	Author URI: 
 	Description: Deliciko Resturent html template. 
   
 =====================
@@ -17,16 +17,16 @@
 6.  	Features Section
 7.		Service Section
 8.		call to action
-9.		Project Area
+9.		Gallery Area
 10.  	funfact area 
 11.		Testimonial
-12.		Latest News
-13.		Partners
+12.		Latest News Update
+13.		Chefs
 14.  	Footer area
 15.  	About us 
-16.  	Service details 
-17.  	Faq area 
-18.		Pricing Table
+16.  	Menu details 
+17.  	Daily Offers area 
+18.		Pricing Area
 19.		404 Page	
 20.		Blog
 21.		Blog details
@@ -410,9 +410,12 @@ button:focus {
 	transition: all .5s;
 
 	&:hover {
-		background: #222222;
+		background: #bc8151;
 		color: #fff;
-		border-color: #222222;
+		border-color: #bc8151;
+		box-shadow: none;
+	}
+	&::focus{
 		box-shadow: none;
 	}
 }
@@ -430,11 +433,11 @@ button:focus {
 
 .btn-border {
 	border: 1px solid #bc906b;
-	color: #fff !important;
+	color: #bc906b !important;
 
 	&:hover {
 		background: #bc906b;
-		color: #222222;
+		color: #fff !important;
 		border-color: #bc906b;
 	}
 }
@@ -471,7 +474,7 @@ button:focus {
 	.section-title {
 		margin-bottom: 20px;
 		text-align: center;
-		font-size: 48px;
+		font-size: 54px;
 		font-weight: 400;
 		color: #2c2c2c;
 
@@ -800,9 +803,11 @@ button:focus {
 	color: #fff;
 	backface-visibility: hidden;
 	margin-top: 0px;
-	min-height: 600px;
+	// min-height: 600px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: center;
+	padding: 160px 0;
 
 }
 
@@ -813,9 +818,11 @@ button:focus {
 .banner-title {
 	color: #fff;
 	font-size: 74px;
-	line-height: 115px;
+	line-height: 90px;
 	font-weight: 400;
 	margin-bottom: 20px;
+	font-family: "ZCOOL XiaoWei";
+	margin-top: 90px;
 
 	span {
 		color: #bc906b;
@@ -836,22 +843,23 @@ button:focus {
 	justify-content: center;
 	align-items: center;
 	align-content: center;
-	min-height: 225px;
+	// min-height: 225px;
 }
 
 .breadcrumb {
 	padding: 0;
 	background: none;
-	font-size: 16px;
+	font-size: 15px;
 	font-weight: 500;
 	text-transform: uppercase;
+	margin: 10px 0;
 
 	li {
 		a {
 			color: #fff;
 
 			&:hover {
-				color: #007bff;
+				color: #bc906b;
 			}
 		}
 	}
@@ -866,9 +874,10 @@ button:focus {
 }
 
 .breadcrumb li:not(:last-child):after {
-	padding: 0 5px;
+	padding: 0 15px;
 	color: #fff;
-	content: "/\00a0";
+	content: "\e945";
+	font-family: 'iconfont';
 }
 
 

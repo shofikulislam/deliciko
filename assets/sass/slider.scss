@@ -250,17 +250,17 @@
          display: block;
          margin: 10px 0px;
          top: 0;
-         line-height: 20px;
+         line-height: 0px;
 
          span {
-            width: 8px;
-            height: 8px;
+            width: 5px;
+            height: 5px;
             border-radius: 50%;
-            background: #59616d;
+            background: #6f6b6b;
             display: inline-block;
             opacity: 1;
-            margin: 0 3px;
-            opacity: .5;
+            // margin: 0 3px;
+            // opacity: .5;
 
          }
 
@@ -273,7 +273,7 @@
                height: 15px;
                background: transparent;
                position: relative;
-               right: 3px;
+               right: 5px;
                top: 2px;
                opacity: 1;
             }

@@ -53,67 +53,33 @@
 
 
     <!--Home page style-->
-    <header id="header" class="header-classic border-bottom">
-        <div class="topbar b-bottom">
+    <header id="header" class="header-transparent navbar-sticky">
+        <div class="logo-area">
+            <a href="./index.html" class="logo">
+                <img class="img-fluid" src="assets/images/logo/logo.png" alt="">
+            </a>
+        </div>
+
+
+        <!-- navbar container start -->
+        <div class="navbar-container">
             <div class="container">
                 <div class="row">
-
-                    <div class="col-lg-4 col-md-4 align-self-center">
-                        <ul class="social-links text-left">
-                            <li class="">
-                                <a title="" href="#">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a title="" href="#">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a title="" href="#">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li class="">
-                                <a title="" href="#">
-                                    <i class="fa fa-pinterest-p"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-4 text-center">
-                        <a href="index.html" class="logo navbar-brand">
-                            <img class="img-fluid" src="assets/images/logo/header_logo.png" alt="">
-                        </a>
-                    </div>
-                    <div class="col-lg-4 d-none text-right d-lg-block align-self-center">
-                        <div class="header-right-btn">
-                            <a href="#" class="btn btn-primary float-right">Book a table</a>
-                        </div>
-                    </div>
-                    <!-- Col end -->
-                </div>
-            </div>
-        </div>
-        <!-- navbar container start -->
-        <div class="navbar-container  navbar-sticky padding-0 bg-white">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-10">
-                        <nav class="navbar navbar-expand-lg navbar-light">
-
+                    <div class="col-lg-8">
+                        <nav class="navbar navbar-expand-lg navbar-light pull-right">
                             <button class="navbar-toggler" type="button" data-toggle="collapse"
                                 data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                                 aria-label="Toggle navigation">
-                                <span class="navbar-toggler-icon"></span>
+                                <span class="navbar-toggler-icon">
+                                    <i class="icon icon-menu"></i>
+                                </span>
                             </button>
-                            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                                 <ul class="navbar-nav">
                                     <li class="dropdown nav-item">
                                         <a href="#" class="" data-toggle="dropdown">Home <i
                                                 class="fa fa-angle-down"></i></a>
-                                        <ul class="dropdown-menu active" role="menu">
+                                        <ul class="dropdown-menu" role="menu">
                                             <li><a href="index.html">Home One</a></li>
                                             <li><a href="index-2.html">Home Two</a></li>
                                             <li><a href="index-3.html">Home Three</a></li>
@@ -121,7 +87,7 @@
                                         </ul>
                                     </li>
                                     <li class="dropdown nav-item">
-                                        <a href="#" data-toggle="dropdown">Menu <i
+                                        <a href="#" class="" data-toggle="dropdown">Menu <i
                                                 class="fa fa-angle-down"></i></a>
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="menu-1.html">Menu 1</a></li>
@@ -130,11 +96,16 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a href="reservation.html">Reservation</a>
+                                        <a href="reservation.html" class="">Reservation
+                                            <!-- <i class="fa fa-angle-down"></i></a> -->
+                                            <!-- <ul class="dropdown-menu" role="menu">
+                                            <li><a href="service.html">Service</a></li>
+                                            <li><a href="service-details.html">Service Details</a></li>
+                                        </ul> -->
 
                                     </li>
                                     <li class="nav-item dropdown">
-                                        <a href="#" data-toggle="dropdown">Pages <i
+                                        <a href="#" class="" data-toggle="dropdown">Pages <i
                                                 class="fa fa-angle-down"></i></a>
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="about-us.html">About Us</a></li>
@@ -142,7 +113,7 @@
                                             <li><a href="testimonial.html">Testimonial</a></li>
                                             <li><a href="contact.html">Contact</a></li>
                                             <li class="dropdown-submenu">
-                                                <a href="#" tabindex="-1" data-toggle="dropdown">Gallery <i
+                                                <a href="#" tabindex="-1" class="" data-toggle="dropdown">Gallery <i
                                                         class="fa fa-angle-right"></i></a>
                                                 <ul class="dropdown-menu" role="menu">
                                                     <li><a tabindex="-1" href="gallery.html">Gallery
@@ -153,7 +124,7 @@
                                         </ul>
                                     </li>
                                     <li class="nav-item dropdown active">
-                                        <a href="#" data-toggle="dropdown">Blog <i
+                                        <a href="#" class="" data-toggle="dropdown">Blog <i
                                                 class="fa fa-angle-down"></i></a>
                                         <ul class="dropdown-menu" role="menu">
                                             <li><a href="blog.html">Blog 1</a></li>
@@ -170,7 +141,24 @@
                         </nav>
                     </div>
                     <!-- Col end -->
-
+                    <div class="col-lg-2 pl-0 d-none d-lg-block">
+                        <div class="top-bar pull-right">
+                            <ul class="header-nav-right-info">
+                                <li>
+                                    <i class="icon icon-phone2"></i>
+                                    <span>+1 123-456-789</span>
+                                    Contact us for reservation
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Col end -->
+                    <div class="col-lg-2 d-none text-right d-lg-block align-self-center">
+                        <div class="header-right-btn">
+                            <a href="#" class="btn btn-primary float-right">Book a table</a>
+                        </div>
+                    </div>
+                    <!-- Col end -->
                 </div>
             </div>
         </div>
@@ -590,9 +578,6 @@
                         <!-- post-body end-->
                     </div>
                     <!-- 1st post end-->
-
-
-
                 </div>
 
                 <div class="col-lg-4 col-md-12">
@@ -714,23 +699,22 @@
     <footer id="ts-footer" class="ts-footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 col-lg-2">
+                <div class="col-md-2 col-lg-2">
                     <!-- End Footer info -->
                     <a href="index.html" class="footer-logo">
                         <img src="assets/images/logo/footer_logo.png" alt="footer_logo" class="img-fluid">
                     </a>
                 </div>
                 <!-- End Col -->
-                <div class="col-md-12 col-lg-5 align-self-center">
+                <div class="col-md-5 col-lg-5 align-self-center">
                     <div class="textwidget">
-                        <p>These are thei tastiest restaurants in this city right now. So we scour the city every
-                            day
+                        <p>These are thei tastiest restaurants in this city right now. So we scour the city every day
                             for great eats, great value.</p>
                     </div>
                 </div>
 
 
-                <div class="col-lg-5 col-md-12 align-self-center">
+                <div class="col-lg-5 col-md-5 align-self-center">
                     <div class="ts-subscribe">
                         <div class="ts-widget-newsletter">
 

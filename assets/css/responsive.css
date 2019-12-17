@@ -8,6 +8,53 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .header-transparent .header-right-btn {
+    display: unset;
+    visibility: visible;
+  }
+  .hero-slider .owl-dots {
+    right: 75px;
+  }
+  .hero-slider .slider-item {
+    height: 646px;
+  }
+  .hero-slider .slider-item .slider-content p .slider-sub-title {
+    font-size: 10px;
+  }
+  .intro-about-area .intro-about .intro-about-box .ts-column .column-title {
+    font-size: 23px;
+  }
+  .ts-shaps {
+    display: none;
+  }
+  .ts-funfact {
+    padding: 60px 0 0;
+  }
+  .ts-single-funfact .funfact-title {
+    font-size: 16px;
+  }
+  .menu-block .img-box .info h3 a {
+    font-size: 20px;
+  }
+  .ts-daily-offer .daily-offer-banner .daily-offer-intro {
+    padding-right: 100px;
+  }
+  .feature-tab-slider .owl-nav .owl-next {
+    right: 0;
+  }
+  .feature-tab-slider .owl-nav .owl-prev {
+    left: 0;
+  }
+  .feature-tab-post-wrapper .feature-content h3 {
+    font-size: 23px;
+  }
+  .ts-resarve .resarved-btn {
+    text-align: center;
+    width: 100%;
+  }
+  .chef-details span.chef-name {
+    font-size: 18px;
+  }
   .padding-left-0 {
     padding-left: 0;
   }
@@ -60,6 +107,13 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  #header .navbar-light .navbar-toggler-icon {
+    background-image: none;
+  }
+  #header .navbar-light .navbar-toggler-icon i {
+    font-size: 30px;
+    color: #fff;
+  }
   .header-transparent .logo-area {
     margin-right: 30px;
   }
@@ -366,23 +420,13 @@
   }
   .ts-footer {
     margin-top: 0px;
-    text-align: center;
-  }
-  .ts-footer .textwidget p {
-    margin: 20px 0;
   }
   .header-box .logo-area {
     text-align: center;
     margin-bottom: 20px;
   }
-  .ts-shaps,
-  .ts-shaps-2,
-  .ts-shaps-3,
-  .ts-shaps-4,
-  .ts-shaps-5,
-  .ts-shaps-6,
-  .ts-shaps-7 {
-    display: none;
+  .ts-shaps-2 {
+    top: 25%;
   }
   .quote-area .quote_form {
     position: relative;
@@ -443,9 +487,79 @@
   .vertical-grid-post-area2 .post-content {
     margin-top: 30px;
   }
+  .ts-funfact {
+    padding: 60px 0 0;
+  }
+  .ts-resarve-area img {
+    display: none;
+  }
+  .ts-tab-menu .nav-menu-tabs {
+    margin-bottom: 26px;
+  }
+  .hero-slider .slider-item {
+    height: 720px;
+  }
+  .intro-about-box {
+    padding: 45px 20px;
+  }
+  .intro-about-area .intro-about .intro-about-box .ts-column i.icon {
+    font-size: 35px;
+  }
+  .intro-about-area .intro-about .intro-about-box .ts-column .column-title {
+    font-size: 19px;
+    margin: 20px 0 10px;
+  }
+  .intro-about-box p {
+    margin-bottom: 0;
+  }
+  .intro-about-area .intro-about .intro-about-box .ts-column:after {
+    font-size: 87px;
+    bottom: 30px;
+  }
+  .intro-about .pt-100 {
+    padding-top: 0;
+  }
+  .ts-blog.section-padding {
+    padding: 100px 0;
+  }
+  .ts-contact-wrapper {
+    padding: 40px 10px;
+  }
+  .ts-contact-wrapper h4 {
+    font-size: 19px;
+  }
+  .hero-slider.features-slider-classic .owl-nav {
+    display: none;
+  }
+  .img-fluid {
+    width: 100%;
+  }
+  .dishes-offer-wrapper {
+    padding: 40px 30px;
+  }
+  .menu-btn.mt-40 {
+    margin-top: 0 !important;
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 767px) {
+  .top-contact-info {
+    text-align: center;
+  }
+  .top-contact-info li {
+    margin-right: 0;
+  }
+  .social-links.text-right {
+    text-align: center !important;
+  }
+  #header .navbar-light .navbar-toggler-icon {
+    background-image: none;
+  }
+  #header .navbar-light .navbar-toggler-icon i {
+    font-size: 30px;
+    color: #fff;
+  }
   #header .navbar-collapse {
     background: #101010;
     z-index: 1111;
@@ -506,6 +620,19 @@
   .quote-area-classic .quote-img {
     margin-bottom: -55px;
   }
+  .hero-area.hero-slider .slider-item .slider-left-content .slider-content p {
+    font-size: 45px;
+    line-height: 50px;
+  }
+  .hero-slider .slider-item .slider-content p {
+    font-size: 90px;
+  }
+  .hero-slider .slider-item .slider-content p .slider-sub-title {
+    font-size: 8px;
+  }
+  .hero-slider .slider-item {
+    height: 763px !important;
+  }
   .hero-slider .features-slider .owl-nav,
   .hero-slider .features-slider-classic .owl-nav {
     display: none;
@@ -518,13 +645,15 @@
     border: none;
   }
   ul.navbar-nav > li > a {
-    line-height: 60px;
+    line-height: 50px;
   }
   ul.navbar-nav > li > a i.fa-angle-down {
     float: right;
+    line-height: 50px;
   }
   ul.navbar-nav > li > a i.fa-angle-up {
     float: right;
+    line-height: 50px;
   }
   .navbar-nav {
     text-align: left;
@@ -699,8 +828,12 @@
   }
   /* Sub Pages
 ================================================== */
+  .navbar-sticky {
+    padding: 0;
+  }
   .banner-title {
     font-size: 36px;
+    line-height: 50px;
   }
   .ts-aboutus-classic {
     padding: 50px 0px;
@@ -708,11 +841,45 @@
   .ts-aboutus-classic .about-intro {
     margin-bottom: 40px;
   }
-  .intro-about {
-    margin-top: 50px;
+  .intro-about-area .intro-about .intro-about-box {
+    margin-bottom: 20px;
   }
   .intro-text {
     margin-right: -15px;
+  }
+  .ts-single-funfact i.icon {
+    left: 50%;
+    margin-left: -50px;
+  }
+  .ts-single-funfact .funfact-title {
+    font-size: 16px;
+  }
+  .ts-daily-offer .daily-offer-banner .daily-offer-intro {
+    padding: 50px 20px 50px 20px;
+  }
+  .menu-block .img-box .info h3 {
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+  .menu-block .img-box .info h3 a {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  .ts-daily-offer .menu-block .inner-box .info .price {
+    font-size: 18px;
+    padding-left: 0;
+  }
+  .menu-block .inner-box .info .price i {
+    font-size: 18px;
+  }
+  .menu-block .inner-box .info:before {
+    display: none;
+  }
+  .menu-block .img-box .text {
+    padding: 35px 0px 0px 0px;
+  }
+  .ts-tab-menu .nav-menu-tabs li a i.icon {
+    padding: 0 10px;
   }
   .ts-team {
     margin-bottom: 40px !important;
@@ -759,6 +926,7 @@
   .header-transparent .logo-area {
     text-align: center;
     position: relative;
+    margin: 0 auto;
   }
   .header-transparent .top-bar {
     display: none;
@@ -868,6 +1036,7 @@
   }
   .ts-footer .textwidget p {
     padding-right: 0;
+    padding: 25px 0;
   }
   .hero-slider.features-slider-classic .owl-nav {
     display: none;
@@ -882,9 +1051,18 @@
   }
   .dishes-offer-wrapper {
     margin-bottom: 20px;
+    padding: 80px 50px 80px 50px;
   }
   .ts-tab-menu-2 .nav-menu-tabs li a i.icon {
     margin: 0;
+    padding: 0 36px;
+  }
+  .ts-tab-menu-2 .menu-block .inner-box .info span a {
+    font-size: 30px;
+  }
+  .btn.btn-primary.mr-30 {
+    margin-right: 0px !important;
+    margin-bottom: 20px;
   }
   .ts-resarve .content {
     padding: 50px 20px;
@@ -938,5 +1116,8 @@
   }
   .blocks-gallery-item {
     margin: 10px 0;
+  }
+  .intro-about .pt-100 {
+    padding-top: 0;
   }
 }

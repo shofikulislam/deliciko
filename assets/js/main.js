@@ -1,19 +1,19 @@
 /*
 
-  Template Name: 
-  Author: 
-  Version: 1.0
-  Author URI: https://themeforest.net/user/themefunction/portfolio
-  Description: Build Bench Construction html template. 
+   Template Name: Deliciko
+	Author: 
+	Version: 1.0
+	Author URI:
+	Description: Deliciko Resturent html template. 
    
    =====================
    table of content 
    ====================
    1.   menu toogle
    2.   banner slider
-   3.   team slider
-   4.   recent work
-   5.   partners
+   3.   Chefs slider
+   4.   Resarved date and time
+   5.   featured tab slider
    6.   fun facts
    7.   navigation
   
@@ -47,26 +47,6 @@
       });
 
    }
-
-   /* ----------------------------------------------------------- */
-   /*  Site search
-   /* ----------------------------------------------------------- */
-   //      if ($('.xs-modal-popup').length > 0) {
-   //       $('.xs-modal-popup').magnificPopup({
-   //           type: 'inline',
-   //           fixedContentPos: false,
-   //           fixedBgPos: true,
-   //           overflowY: 'auto',
-   //           closeBtnInside: false,
-   //           callbacks: {
-   //               beforeOpen: function beforeOpen() {
-   //                   this.st.mainClass = "my-mfp-slide-bottom xs-promo-popup";
-   //               }
-   //           }
-   //       });
-   //   }
-
-
 
    /*==========================================================
         Resarved date and time
@@ -429,7 +409,7 @@
 
    /*==========================================================
                       review rating circle
-          ======================================================================*/
+   ==========================================================*/
 
    $('.review-chart').easyPieChart({
       scaleColor: "",
@@ -441,6 +421,8 @@
       animate: 35
    });
 
+      /* Wow Initialize */
+      new WOW().init();
 
    /* ----------------------------------------------------------- */
    /*  Back to top
